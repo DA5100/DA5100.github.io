@@ -15,8 +15,8 @@
   --default-font: "Lato",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Lato-Black",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
-  --andine: "Andine", sans-serif;
-  --Graditen: "Graditen", sans-serif;
+  --andine: "andine", sans-serif;
+  --graditen: "graditen", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -42,7 +42,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #fcf7ea;
   --surface-color: #ffffff;
 }
 
@@ -708,6 +708,28 @@ h6 {
   font-size: 13px;
 }
 
+.footer-with-particles {
+  position: relative;
+  height: 100%;
+  background: var(dark-background);
+  color: white;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+}
+
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -1286,7 +1308,7 @@ section,
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
-  border-radius: 7%;
+  border-radius: 30px;
 }
 
 .portfolio .portfolio-content img {
@@ -1441,7 +1463,7 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 5px;
   overflow: hidden;
-  font-family: var(--Graditen);
+  font-family: var(--graditen);
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1509,8 +1531,8 @@ section,
   visibility: visible;
   opacity: 1;
   padding-top: 10px;
-  /* font-family: var(--Graditen); */
-  font-size: 30px;
+  font-family: var(--graditen);
+  font-size: 20px;
   color: rgb(59 21 11);
 }
 
@@ -2158,6 +2180,53 @@ section,
     z-index: 9999;
   }
 
+  /* .preloader .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .preloader img {
+    max-height: 100px;
+    animation: img-intro 2s;
+    animation: rotate 1s linear infinite;
+   }
+
+  .preloader p {
+    animation: p-intro 4s;
+    font-family: var(--andine);
+    font-size: 35px;
+    color: var(--heading-color);
+    margin-top: 50px;
+  }
+
+  @keyframes img-intro {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateX(340px);
+      opacity: 1;
+    }
+    
+    100% {
+      
+    }
+  }
+
+  @keyframes p-intro {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  } */
+
   .loader {
     width: 60px;
     aspect-ratio: 4;
@@ -2192,7 +2261,7 @@ section,
 /* #guidebook {
   width: 100vh;
   height: 80vh;   
-} */
+}
 
 @keyframes page-animation {
   0% {
@@ -2210,15 +2279,15 @@ section,
 }
 
 @font-face {
-  font-family: 'Andine';
-  src: url(/assets/font/Andine.ttf) format('truetype');
+  font-family: 'andine';
+  src: url(/assets/font/andine.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graditen';
-  src: url(/assets/font/Graditen.ttf) format('truetype');
+  font-family: 'graditen';
+  src: url(/assets/font/graditen.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
