@@ -218,12 +218,12 @@
 })();
 
 // Preloader
-const heroImg = document.getElementById('hero-img');
-  heroImg.addEventListener('load', function () {
-    const preloader = document.querySelector('.preloader');
-    if (preloader) {
-      preloader.classList.add('hidden');
-    }
-  });
+window.addEventListener('DOMContentLoaded', function () {
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
+    preloader.classList.add('hide'); // lebih smooth daripada langsung hilang
+  }
+});
+
 
 ;
