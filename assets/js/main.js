@@ -219,7 +219,7 @@
 
 // Preloader
 const heroImg = document.getElementById('hero-img');
-  heroImg.window.addEventListener('load', function () {
+  heroImg.addEventListener('load', function () {
     const preloader = document.querySelector('.preloader');
     if (preloader) {
       preloader.classList.add('hidden');
