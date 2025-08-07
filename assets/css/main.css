@@ -69,13 +69,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--heading-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--heading-color), transparent 25%);
   text-decoration: none;
 }
 
@@ -2210,10 +2210,10 @@ section,
   font-weight: bold;
   text-transform: uppercase;
   color: #0000;
-  -webkit-text-stroke: 1px var(--brown-dark);
+  -webkit-text-stroke: 1px var(--heading-color);
   background:
-    radial-gradient(1.13em at 50% 1.6em,var(--brown-dark) 99%,#0000 101%) calc(50% - 1.6em) 0/3.2em 100% text,
-    radial-gradient(1.13em at 50% -0.8em,#0000 99%,var(--brown-dark) 101%) 50% .8em/3.2em 100% repeat-x  text;
+    radial-gradient(1.13em at 50% 1.6em,var(--heading-color) 99%,#0000 101%) calc(50% - 1.6em) 0/3.2em 100% text,
+    radial-gradient(1.13em at 50% -0.8em,#0000 99%,var(--heading-color) 101%) 50% .8em/3.2em 100% repeat-x  text;
   animation: l9 2s linear infinite;
 }
 .loader:before {
