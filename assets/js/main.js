@@ -203,7 +203,7 @@
           const firstPortfolioFilter = document.querySelector('.isotope-filters li:first-child');
           if (firstPortfolioFilter) {
             firstPortfolioFilter.click();
-            console.log("clicked");
+            // console.log("clicked");
           }
         }
 
@@ -211,17 +211,19 @@
       }
 
       window.addEventListener('load', () => {
-        pagination('beranda');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-
-      // Kalo dari web lain, scroll ke section yang diinginkan
-      const urlParams = new URLSearchParams(window.location.search);
+        const urlParams = new URLSearchParams(window.location.search);
       const pageParam = urlParams.get('page') || 'beranda'; // default ke 'beranda' jika tidak ada parameter
       if (pageParam) {
         pagination(pageParam);
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        pagination('beranda');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
+      });
+
+      // Kalo dari web lain, scroll ke section yang diinginkan
+      
 })();
 
 // Preloader
