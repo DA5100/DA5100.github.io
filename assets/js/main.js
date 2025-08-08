@@ -227,7 +227,7 @@
 })();
 
 // Preloader
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
   const preloader = document.querySelector('.preloader');
   if (preloader) {
     preloader.classList.add('hide'); // lebih smooth daripada langsung hilang
